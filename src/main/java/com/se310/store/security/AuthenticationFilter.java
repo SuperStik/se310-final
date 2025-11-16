@@ -22,8 +22,6 @@ import java.util.Optional;
  */
 public class AuthenticationFilter implements Filter {
 
-    //TODO: Implement REST authentication filter for Store operations.
-
     private AuthenticationService authenticationService;
 
     public AuthenticationFilter() {

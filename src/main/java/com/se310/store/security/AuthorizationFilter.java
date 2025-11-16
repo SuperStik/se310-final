@@ -22,7 +22,6 @@ import java.io.IOException;
  */
 public class AuthorizationFilter implements Filter {
 
-    //TODO: Implement REST authorization filter for Store operations.
     //TODO: Only ADMIN users can perform operations associated with Store building
 
     /**

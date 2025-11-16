@@ -27,7 +27,6 @@ import java.util.Optional;
  */
 public class DataManager {
 
-    //TODO: Implement DataManager for storing application data in H2 database
     //TODO: Implement Singleton pattern with double-checked locking
 
     private static volatile DataManager instance;

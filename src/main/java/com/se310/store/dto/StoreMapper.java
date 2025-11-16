@@ -18,8 +18,6 @@ public class StoreMapper {
 
     /**
      * StoreDTO - Data Transfer Object for Store
-     * Contains only the basic store information without complex nested collections.
-     * Implements JsonSerializable to support polymorphic JSON serialization.
      */
     public static class StoreDTO {
         private String id;
@@ -58,7 +56,5 @@ public class StoreMapper {
         public void setDescription(String description) {
             this.description = description;
         }
-
     }
-
 }

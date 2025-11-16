@@ -23,6 +23,7 @@ public class StoreRepository {
     private final DataManager dataManager;
 
     public StoreRepository(DataManager dataManager) {
+
         this.dataManager = dataManager;
     }
 }

@@ -19,7 +19,6 @@ public class UserMapper {
 
     /**
      * UserDTO - Data Transfer Object for User
-     * Excludes sensitive information like password from API responses.
      */
     public static class UserDTO {
         private String email;
