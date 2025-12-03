@@ -14,7 +14,7 @@ public class Product {
     private String description;
     private String size;
     private String category;
-    private Double price;
+    private double price;
     private Temperature temperature;
 
     /**
@@ -28,7 +28,7 @@ public class Product {
      * @param temperature
      */
     public Product(String id, String name, String description, String size,
-                   String category, Double price, Temperature temperature) {
+                   String category, double price, Temperature temperature) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -122,7 +122,7 @@ public class Product {
      * Setter method for Product price
      * @return
      */
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -130,7 +130,7 @@ public class Product {
      * Getter method for Product price
      * @param price
      */
-    public void setPrice(Double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -152,14 +152,22 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", size='" + size + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                ", temperature=" + temperature +
-                '}';
+        StringBuilder sb = new StringBuilder(128);
+        sb.append("Product{id='")
+                .append(id)
+                .append("', name='")
+                .append(name)
+                .append("', description='")
+                .append(description)
+                .append("', size='")
+                .append(size)
+                .append("', category='")
+                .append(category)
+                .append("', price='")
+                .append(price)
+                .append("', temperature='")
+                .append(temperature)
+                .append('}');
+        return sb.toString();
     }
 }
