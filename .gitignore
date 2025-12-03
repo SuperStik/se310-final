@@ -1,2 +1,5 @@
 # compilation crap
 target/*
+
+# macOS folder info
+.DS_Store
