@@ -3,3 +3,6 @@ target/*
 
 # macOS folder info
 .DS_Store
+
+# IntelliJ workspace
+./.idea/workspace.xml
